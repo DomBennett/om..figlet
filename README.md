@@ -2,8 +2,8 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 <!-- devtools::rmarkdown::render("README.Rmd") -->
 <!-- Rscript -e "library(knitr); knit('README.Rmd')" -->
-Run `figlet` with `outsider` in R
-=================================
+Run [`figlet`](http://www.figlet.org/) with `outsider` in R
+===========================================================
 
 [![Build Status](https://travis-ci.org/dombennett/om..figlet.svg?branch=master)](https://travis-ci.org/dombennett/om..figlet)
 
