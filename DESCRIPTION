@@ -1,0 +1,13 @@
+Package: om..figlet
+Type: Package
+Version: 0.0.1
+Title: Outsider module for running figlet
+Description: Install and run figlet from within R.
+Encoding: UTF-8
+Depends:
+    R (>= 3.6.1)
+Imports:
+    outsider.base
+Suggests:
+    outsider
+RoxygenNote: 6.1.1
