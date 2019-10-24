@@ -1,0 +1,40 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+<!-- devtools::rmarkdown::render("README.Rmd") -->
+<!-- Rscript -e "library(knitr); knit('README.Rmd')" -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# Run `figlet` with `outsider` in R
+
+[![Build Status](https://travis-ci.org/dombennett/om..figlet.svg?branch=master)](https://travis-ci.org/dombennett/om..figlet)
+
+## Easy to install
+
+```{r install-figlet, eval=FALSE, include=TRUE}
+library(outsider)
+module_install(repo = "dombennett/om..figlet")
+module_help(repo = "dombennett/om..figlet")
+```
+
+See [`outsider`](https://github.com/AntonelliLab/outsider) documentation for
+more information.
+
+
+## Create ASCII art in R!
+
+```{r run-figlet, eval=TRUE, include=TRUE}
+library(outsider)
+figlet <- module_import(fname = 'figlet', repo = 'dombennett/om..figlet')
+# see all examples
+figlet(arglist = c('-f', 'banner', 'Figlet from R'))
+```

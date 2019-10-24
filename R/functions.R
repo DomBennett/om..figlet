@@ -31,8 +31,6 @@ figlet <- function(arglist = arglist_get(...), input_file = NULL,
   # ensure script is written in binary format
   script_cnntn <- file(script, 'wb')
   cmds <- paste(arglist, collapse = ' ')
-  # debug print
-  print(cmds)
   write(x = cmds, file = script_cnntn)
   close(script_cnntn)
   # initialise outsider container by specifying the command,
