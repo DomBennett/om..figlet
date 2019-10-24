@@ -36,5 +36,5 @@ more information.
 library(outsider)
 figlet <- module_import(fname = 'figlet', repo = 'dombennett/om..figlet')
 # see all examples
-figlet(arglist = c('-f', 'banner', 'Figlet from R'))
+figlet(arglist = c('-f', 'big', 'Figlet from R'))
 ```
