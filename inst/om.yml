@@ -3,8 +3,7 @@
 #  specified in the DESCRIPTION.)
 program: figlet
 # any details about the program
-details: TODO write a detailed description advertising what this module does!
-    Note, newlines should be followed by four spaces.
+details: ASCII art using the figlet program
 # the dockerhub username (optional)
 docker: dombennett
 # repo information (optional)
