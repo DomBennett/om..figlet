@@ -18,23 +18,54 @@ knitr::opts_chunk$set(
 
 [![Build Status](https://travis-ci.org/dombennett/om..figlet.svg?branch=master)](https://travis-ci.org/dombennett/om..figlet)
 
+> FIGlet is a program for making large letters out of ordinary text.
+
 ## Easy to install
 
-```{r install-figlet, eval=FALSE, include=TRUE}
+```{r install-figlet, eval=TRUE, include=TRUE}
 library(outsider)
 module_install(repo = "dombennett/om..figlet")
-module_help(repo = "dombennett/om..figlet")
+# module_help(repo = "dombennett/om..figlet")
 ```
 
-See [`outsider`](https://github.com/AntonelliLab/outsider) documentation for
-more information.
+The module comes with all the base fonts plus all contributed fonts (~150).
 
-
-## Create ASCII art in R!
+## Create text art in R!
 
 ```{r run-figlet, eval=TRUE, include=TRUE}
 library(outsider)
 figlet <- module_import(fname = 'figlet', repo = 'dombennett/om..figlet')
-# see all examples
-figlet(arglist = c('-f', 'big', 'Figlet from R'))
+
+# big font, centered font
+figlet(arglist = c('-c', '-f', 'big', 'Figlet from R'))
+
+# calgphy2 font, right-adjusted
+figlet(arglist = c('-r', '-f', 'calgphy2', 'Figlet from R'))
+
+# isometric2 font, with "kerning"
+figlet(arglist = c('-k', '-f', 'isometric2', 'Figlet from R'))
+
+# rev font plus multiple arguments
+figlet(arglist = c('-lk', '-f', 'rev', 'Figlet from R'))
 ```
+
+```{r uninstall, eval=TRUE, include=FALSE}
+module_uninstall('dombennett/om..figlet')
+```
+
+## Link
+
+Find out more at the [Figlet website](www.figlet.org/).
+
+(Also, this
+[blogpost](https://delightlylinux.wordpress.com/2014/05/30/produce-fancy-text-with-figlet/)
+is good.)
+
+---
+
+<img align="left" width="120" height="125" src="https://raw.githubusercontent.com/AntonelliLab/outsider/master/logo.png">
+
+**An `outsider` module**
+
+Learn more at [outsider website](https://antonellilab.github.io/outsider/).
+Want to build your own module? Check out [`outsider.devtools` website](https://antonellilab.github.io/outsider.devtools/).

@@ -4,8 +4,7 @@
 \alias{figlet}
 \title{figlet}
 \usage{
-figlet(arglist = arglist_get(...), input_file = NULL,
-  output_file = NULL)
+figlet(arglist = arglist_get(...), input_file = NULL, output_file = NULL)
 }
 \arguments{
 \item{arglist}{Arguments for figlet}
